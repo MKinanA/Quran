@@ -10,9 +10,12 @@
     <nav class="navbar sticky-top bg-body-tertiary">
         <div class="container">
             <h1 class="navbar-brand mb-0 h1 surat"><span><span class="bi bi-caret-left-fill back" title="Home" onclick="history.back()"></span>Surat</span></h1>
-          <form onkeydown="return event.key != 'Enter';">
-            <input class="form-control" placeholder="Cari ayat" oninput="display_cari_surat();" id="search cari" name="search cari" hidden>
-          </form>
+            <form onkeydown="return event.key != 'Enter';">
+                <div class="input-group">
+                    <input class="form-control" placeholder="Cari ayat" oninput="display_cari_ayat();" id="search cari" name="search cari">
+                    <button class="btn btn-outline-secondary btn bg-body-tertiary clear" title="Clear" type="button" id="button-addon2" onclick="cari_ayat.value = ''; display_cari_ayat();">&Cross;</button>
+                </div>
+            </form>
         </div>
     </nav>
     <div class="container">

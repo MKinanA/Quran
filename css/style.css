@@ -96,7 +96,7 @@ nav form button.clear {
     cursor: pointer;
 }
 
-.card-surat-inactive {
+.card-surat-inactive, .card-ayat-inactive {
     cursor: default;
     pointer-events: none;
     opacity: 0.25;
@@ -274,6 +274,11 @@ body>.container .loading-container {
 
 .card-ayat .arti {
     margin-bottom: 0;
+}
+
+.card-ayat .highlighted {
+    background: var(--accent-color);
+    color: var(--bg-color);
 }
 
 footer {
