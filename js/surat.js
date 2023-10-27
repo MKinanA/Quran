@@ -54,7 +54,7 @@ function display_isi_surat() {
         <strong><span><span class="nomor">${isi_surat.nomor}</span>. <span class="nama-latin">${isi_surat.nama_latin}</span></span><span class="text-end nama arab">${isi_surat.nama}</span></strong>
         <p class="info"><span class="tempat-turun">${JSON.parse('{"mekah":"Makkiyyah","madinah":"Madaniyyah"}')[isi_surat.tempat_turun]}</span><span class="dot">•</span><span><span class="jumlah-ayat">${isi_surat.jumlah_ayat}</span> ayat</span><span class="dot">•</span><span class="text-end arti-nama">${isi_surat.arti}</span></p>
         <p class="deskripsi">${isi_surat.deskripsi}</p>
-        <div class="audio"><button class="btn bg-body-tertiary" onclick="play_surat_audio();"><span class="bi bi-play-fill"></span> Play audio</button></div>
+        <div class="audio"><button class="btn bg-body-tertiary" onclick="play_surat_audio();"><span class="bi bi-play-fill"></span> Putar audio</button></div>
     </div>
 </div>`, card_ayat = '';
     ayat_surat.forEach(ayat => {
@@ -81,7 +81,7 @@ function play_surat_audio() {
 };
 
 function stop_surat_audio() {
-    document.querySelector('.card-surat-title .audio').innerHTML = `<button class="btn bg-body-tertiary" onclick="play_surat_audio();"><span class="bi bi-play-fill"></span> Play audio</button>`;
+    document.querySelector('.card-surat-title .audio').innerHTML = `<button class="btn bg-body-tertiary" onclick="play_surat_audio();"><span class="bi bi-play-fill"></span> Putar audio</button>`;
 };
 
 get_isi_surat(get_param('nomor'));
