@@ -1,0 +1,16 @@
+{
+    "dark": {
+        "--bg-color": "#212529",
+        "--bg-color-2": "#2b3035",
+        "--bg-color-3": "#393a3a",
+        "--accent-color": "#ffffff",
+        "--accent-color-trans": "rgba(255, 255, 255, 0.25)"
+    },
+    "light": {
+        "--bg-color": "#",
+        "--bg-color-2": "#",
+        "--bg-color-3": "#",
+        "--accent-color": "#",
+        "--accent-color-trans": "rgba(, , , 0.25)"
+    }
+}
