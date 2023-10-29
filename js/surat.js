@@ -113,7 +113,7 @@ function display_isi_surat() {
 </div>`;
     });
     document.querySelector('head>title').innerHTML = `${isi_surat.nomor}. ${isi_surat.nama_latin} ${isi_surat.nama} | Qur'an`;
-    document.querySelector('nav h1.navbar-brand').innerHTML = `<span><span class="bi bi-caret-left-fill back" title="Home" onclick="history.back()"></span>${isi_surat.nomor}. ${isi_surat.nama_latin}</span><span class="text-end arab">${isi_surat.nama}</span>`;
+    document.querySelector('nav h1.navbar-brand .title').innerHTML = `<span>${isi_surat.nomor}. ${isi_surat.nama_latin}</span><span class="text-end arab">${isi_surat.nama}</span>`;
     document.querySelector('body>.container').innerHTML = '<div class="row"><div class="col 12"></div></div>';
     document.querySelector('body>.container .row .col').innerHTML = card_surat_title + `<div class='ayat'>${card_ayat}</div>`;
 };

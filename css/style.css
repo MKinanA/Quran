@@ -48,6 +48,7 @@ nav {
 
 nav .container .navbar-brand {
     font-weight: 700;
+    padding: 0;
 }
 
 nav .container .navbar-brand span.back {
@@ -56,12 +57,12 @@ nav .container .navbar-brand span.back {
     margin-right: 0.5rem;
 }
 
-nav .container .navbar-brand.surat {
+nav .container .navbar-brand.surat .title{
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 nav .container .navbar-brand.surat .arab {
@@ -76,6 +77,23 @@ nav form input.form-control.cari-input.inactive {
     text-align: center;
     pointer-events: none;
     opacity: 0.25;
+}
+
+nav .navbar-brand span:first-of-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav .navbar-brand .logo-and-title {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav .navbar-brand .logo-and-title img {
+    height: 2rem;
 }
 
 .form-control:focus {
