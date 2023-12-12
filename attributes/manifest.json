@@ -1,0 +1,15 @@
+{
+    "name": "Qur'an Website",
+    "short_name": "Qur'an",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "logo_app.png",
+            "sizes": "288x288",
+            "type": "image/png"
+        }
+    ],
+    "display": "fullscreen",
+    "theme_color": "#000000",
+    "background_color": "#000000"
+}
