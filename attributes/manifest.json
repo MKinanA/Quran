@@ -1,7 +1,7 @@
 {
     "name": "Qur'an Website",
     "short_name": "Qur'an",
-    "start_url": "/",
+    "start_url": "./",
     "icons": [
         {
             "src": "logo_app.png",
